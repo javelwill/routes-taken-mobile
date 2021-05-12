@@ -1,10 +1,11 @@
 import React from 'react'
-import { SafeAreaView, Text } from 'react-native'
+import { Text } from 'react-native'
+import { SafeArea } from '../../../components/utility/safe-area.component'
 
 export const SigninScreen = () => {
   return (
-    <SafeAreaView>
+    <SafeArea>
       <Text>SigninScreen</Text>
-    </SafeAreaView>
+    </SafeArea>
   )
 }
