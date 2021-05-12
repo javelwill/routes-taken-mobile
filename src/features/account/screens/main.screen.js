@@ -1,10 +1,18 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { SafeAreaView, Text, Button } from 'react-native'
 
-export const MainScreen = () => {
+export const MainScreen = ({ navigation }) => {
   return (
-    <View>
+    <SafeAreaView>
       <Text>MainScreen</Text>
-    </View>
+      <Button
+        title="Go to SigninScreen"
+        onPress={() => navigation.navigate('Signin')}
+      />
+      <Button
+        title="Go to SignupScreen"
+        onPress={() => navigation.navigate('Signup')}
+      />
+    </SafeAreaView>
   )
 }
