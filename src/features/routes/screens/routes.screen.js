@@ -1,10 +1,15 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { Text, Button } from 'react-native'
+import { SafeArea } from '../../../components/utility/safe-area.component'
 
-export const RoutesScreen = () => {
+export const RoutesScreen = ({ navigation }) => {
   return (
-    <View>
+    <SafeArea>
       <Text>RoutesScreen</Text>
-    </View>
+      <Button
+        title="Go to RouteDetailScreen"
+        onPress={() => navigation.navigate('RouteDetail')}
+      />
+    </SafeArea>
   )
 }
