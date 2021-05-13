@@ -7,7 +7,7 @@ import { SettingsNavigator } from './settings.navigator'
 export const Navigation = () => {
   return (
     <NavigationContainer>
-      <SettingsNavigator />
+      <RoutesNavigator />
     </NavigationContainer>
   )
 }
