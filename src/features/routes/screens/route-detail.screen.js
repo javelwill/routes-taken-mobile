@@ -1,11 +1,11 @@
 import React from 'react'
 import { Text } from 'react-native'
-import { SafeArea } from '../../../components/utility/safe-area.component'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 export const RouteDetailScreen = () => {
   return (
-    <SafeArea>
+    <SafeAreaView>
       <Text>RouteDetailScreen</Text>
-    </SafeArea>
+    </SafeAreaView>
   )
 }

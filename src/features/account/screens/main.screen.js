@@ -1,10 +1,10 @@
 import React from 'react'
 import { Text, Button } from 'react-native'
-import { SafeArea } from '../../../components/utility/safe-area.component'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 export const MainScreen = ({ navigation }) => {
   return (
-    <SafeArea>
+    <SafeAreaView>
       <Text>MainScreen</Text>
       <Button
         title="Go to SigninScreen"
@@ -14,6 +14,6 @@ export const MainScreen = ({ navigation }) => {
         title="Go to SignupScreen"
         onPress={() => navigation.navigate('Signup')}
       />
-    </SafeArea>
+    </SafeAreaView>
   )
 }
